@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet"> 
+    <title>Pokemon Trainer Card!</title>
+    
+</head>
+<body>
+    <div class="container" >
+       
+        <div class="cardBase flipper" id="card">
+            <div class="front-card card" >
+                <div class="cardBack">
+                    <div class="backPokeball">
+                        <div class="secondPokeball">
+                            <div class="innerCircle"></div>
+                        </div>
+                        <div class="secondPokeballLine"></div>
+                    </div>
+                </div>
+                
+                <div class="cardHeader">
+                    <div class="pokeball">
+                        <div class="upper-half"> </div>
+                        <div class="lower-half"> </div>
+                        <div class="base"> </div>
+                        <div class="inner-circle"> </div>
+                      </div>
+                    <p>TRAINER'S CARD</p>
+                    
+                
+                    <div class="pokeball ">
+                        <div class="upper-half"> </div>
+                        <div class="lower-half"> </div>
+                        <div class="base"> </div>
+                        <div class="inner-circle"> </div>
+                      </div>
+                </div>
+                <div class="cardBody">
+                    <div class="cardLeft">
+                        <div class="cardfield"><p>IDNo.</p> <p>0001</p> </div>
+                        <div class="cardfield"><p>NAME</p> <p>Noah</p> </div>
+        
+                        <div class="cardfield"><p>MONEY</p> <p>$3000</p> </div>
+                        <div class="cardfield"><p>POKéDEX</p> <p>491</p> </div>
+                        <div class="cardfield"><p>SCORE</p> <p>2021</p> </div>
+                    </div>
+        
+                    <div class="cardRight">
+                        <div class="stars">
+                            <i class="star"></i>
+                            <i class="star"></i>
+                            <i class="star"></i>
+                        </div>
+                        
+                        <div class="trainerPic">
+                            <div class="imageBody">
+                                <img src="./resources/trainerPic.JPG" alt="trainerPic" srcset="" class="image" />
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cardBottom">
+                    <div class="cardfield"><p>TIME</p><p id="timer"></p> </div>
+                    <div class="cardfield"><p>ADVENTURE STARTED</p> <p>Dec. 07, 2021</p> </div>
+                </div>
+    
+    
+            </div>
+            <div class="back-card badgeCard">
+                <div class="cardHeader">
+                    <div class="pokeball">
+                        <div class="upper-half"> </div>
+                        <div class="lower-half"> </div>
+                        <div class="base"> </div>
+                        <div class="inner-circle"> </div>
+                      </div>
+                    <p>LEAGUE BADGES</p>
+                    
+                
+                    <div class="pokeball ">
+                        <div class="upper-half"> </div>
+                        <div class="lower-half"> </div>
+                        <div class="base"> </div>
+                        <div class="inner-circle"> </div>
+                      </div>
+                </div>
+                <div class="badgeRow">
+                    <div class="badge">
+                        <div class="rock">
+                            <div class="semi"><div class="inner-semi"></div></div>
+                        </div>
+                        <div class="rockBottom">
+                            <div class="innerRocker"></div>
+                        </div>
+                        <div class="innerRock"></div>
+                    </div>
+                    <div class="badge">
+                        <div class="leaf">
+                            <div class="leaf-mid">
+                                <div class="innerLeaf">
+                                    <div class="innerTriangleBig"></div>
+                                </div>
+                            </div>
+                            <div class="leaf-left">
+                                <div class="innerLeaf">
+                                    <div class="innerTriangle"></div>
+                                </div>
+                            </div>
+                            <div class="leaf-right">
+                                <div class="innerLeaf">
+                                    <div class="innerTriangle"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="badge">
+                        
+                    </div>
+                    <div class="badge">
+                        
+                    </div>
+                </div>
+
+
+            </div>
+            
+        </div>
+        <button id="clicker" class="clickMe" onclick="flipCard()">Click me</button>
+
+
+
+
+    </div>
+  
+    <script src="index.js"></script>
+
+</body>
+</html>

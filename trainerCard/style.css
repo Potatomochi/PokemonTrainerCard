@@ -1,0 +1,451 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'VT323', monospace;
+  font-size:23px;
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+}
+.container{
+margin:0 auto;
+}
+.cardBase{
+  width:560px;
+  height:360px;
+  background-color:#333;
+  border-radius:5px;
+  margin:0 auto;
+  position:fixed;
+  left:50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+  overflow:hidden;
+}
+.card{
+  width:550px;
+  height:350px;
+  background-color:#4aa5f8;
+  border-radius:5px;
+  border:1px solid white;
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+
+  padding:5px;
+  overflow:hidden;
+}
+.cardBack{
+  position: absolute;
+  z-index: -999;
+}
+.cardHeader{
+  display:flex;
+  margin-left:15px;
+  margin-top: 5px;
+}
+.cardHeader p{
+margin:-2px 10px 0px 10px;
+color:white;
+font-size: 30px;
+font-weight: bold;
+}
+.cardBody{
+  display:flex;
+}
+.backPokeball {
+height: 300px;
+width: 300px;
+border-radius: 50%;
+background:rgb(255, 255, 255, 0.2);
+overflow: hidden;
+position: fixed;
+
+
+top:-20%;
+left:-10%;
+z-index: -999;
+}
+.backPokeball .secondPokeball{
+height: 200px;
+width: 200px;
+border-radius: 50%;
+background:#4aa5f8;
+position:absolute;
+z-index: 2;
+top:17%;
+left:15%;
+}
+.backPokeball .secondPokeball .innerCircle{
+height: 100px;
+width: 100px;
+border-radius: 50%;
+background:rgb(255, 255, 255, 0.2);
+position:absolute;
+z-index: 2;
+top:24%;
+left:25%;
+}
+.backPokeball .secondPokeballLine{
+height: 50px;
+width: 400px;
+background:#4aa5f8;
+position:absolute;
+z-index: 1;
+transform:rotate(40deg);
+top:55%;
+}
+
+.pokeball {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  border: 4px solid rgb(240, 240, 240);
+  transform-origin: center bottom;
+  
+}
+.pokeball .base {
+  background:rgb(240, 240, 240);
+  height: 100%;
+  width: 100%;
+  padding: 10%;
+}
+.pokeball .upper-half {
+  position: absolute;
+  background:#4aa5f8;
+  height: 42%;
+  width: 100%;
+}
+.pokeball .lower-half {
+  bottom: 0;
+  position: absolute;
+  background:#4aa5f8;
+  height: 42%;
+  width: 100%;
+}
+.pokeball .inner-circle {
+  border-radius: 50%;
+  height: 40%;
+  width: 40%;
+  background: #4aa5f8;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 2px solid white;
+  transform: translate(-50%, -50%);
+}
+
+.cardLeft{
+  width:60%;
+}
+.cardfield{
+  display:flex;
+  justify-content: space-between;
+  
+  background-color: rgb(237, 247, 248 , 0.2);
+  
+  border-radius:5px;
+  padding:5px;
+  margin:10px 0px 0px 15px;
+}
+.cardfield:nth-of-type(2){
+  display:flex;
+  justify-content: space-between;
+  
+  background-color: rgb(237, 247, 248 , 0.2);
+  margin:2px 0px 0px 15px;
+  border-radius:5px;
+  padding:5px;
+}  
+.cardRight{
+  margin-left:5px;
+  margin-top:1px;
+  margin-right:15px;
+  width:40%;
+  /* border:1px solid red; */
+ 
+}
+.stars{
+  margin-left:28%;
+}
+.star {
+position: relative;
+display: inline-block;
+width: 0;
+height: 0;
+margin-left: 0.9em;
+margin-right: 0.9em;
+margin-bottom: 1.2em;
+border-right: 0.3em solid transparent;
+border-bottom: 0.7em solid #FC0;
+border-left: 0.3em solid transparent;
+/* Controlls the size of the stars. */
+font-size: 15px;
+}
+.star:before, .star:after {
+content: "";
+display: block;
+width: 0;
+height: 0;
+position: absolute;
+top: 0.6em;
+left: -1em;
+border-right: 1em solid transparent;
+border-bottom: 0.7em solid #FC0;
+border-left: 1em solid transparent;
+transform: rotate(-35deg);
+}
+.star:after {
+transform: rotate(35deg);
+}
+
+.trainerPic{
+  width:150px;
+  height:150px;
+  background-color: rgb(237, 247, 248 , 0.2);
+  border-radius:5px;
+  margin-left:15%;
+  margin-top:5%;
+}
+.imageBody{
+height: 150px;
+width: 150px;
+
+}
+.image{
+max-width: 100%;
+max-height: 90%;
+margin-left:16%; 
+margin-top:7px;
+
+}
+.cardBottom{
+width:95%;
+}
+
+
+.clickMe{
+position:fixed;
+top:80%;
+left:47.5%;
+}
+.badgeCard{
+width:550px;
+height:350px;
+border-radius:5px;
+position:absolute;
+left:5px;
+top:5px;
+transform: translate(-50%, -50%);
+padding:5px;
+overflow:hidden;
+}
+.badgeCard .cardHeader .pokeball{
+  border: 4px solid rgb(167, 167, 167);
+}
+.badgeCard .cardHeader .pokeball .base{
+  background: rgb(167, 167, 167);
+}
+
+.badgeCard .cardHeader .pokeball .upper-half{
+  background:#333;
+}
+.badgeCard .cardHeader .pokeball .lower-half{
+  background:#333;
+}
+.badgeCard .cardHeader .pokeball .inner-circle{
+  background:#333;
+  border:3px solid rgb(167, 167, 167);
+}
+.badgeCard .cardHeader p{
+  color:rgb(167, 167, 167);
+}
+
+.badgeRow {
+  margin-top: 5%;
+  display:flex;
+  justify-content:space-between;
+  padding: 0px 15px 0px 15px;
+}
+
+.badge{
+  width:100px;
+  height:100px;
+
+  margin:0 auto;
+  
+}
+
+.rock{
+  background:rgb(219, 239, 240);
+  width:60px;
+  height:60px;
+  border-radius: 50%;
+  margin-top:3%;
+  margin-left:3%;
+  z-index: -999;
+  position:fixed;
+  border:4px solid white;
+}
+.rock .semi{
+  height: 40px;
+  width: 52px;
+  margin-left:1.5%;
+  margin-top:2%;
+  border-radius: 150px 150px 0 0;
+  background-color: rgb(148, 95, 95);
+  padding-top:15%;
+}
+.rock .semi .inner-semi{
+  height: 22px;
+  width: 35px;
+  margin-left:16%;
+  
+  border-radius: 150px 150px 0 0;
+  background-color: rgb(219, 239, 240);
+}
+.rockBottom{
+  background-color: rgb(219, 239, 240);
+  width:61px;
+  height:60px;
+  margin-top:17%;
+  margin-left:15.5px;
+  clip-path: polygon(0 56%, 18% 100%, 83% 100%, 100% 56%);
+  border:2px solid white;
+
+}
+.rockBottom .innerRocker {
+  background-color: rgb(148, 95, 95);
+  width:57px;
+  height:60px;
+  margin-top:-10%;
+  margin-left:0%;
+  z-index: 3;
+  clip-path: polygon(22% 100%, 2% 71%, 20% 70%, 33% 86%, 71% 86%, 81% 70%, 100% 70%, 79% 100%);
+}
+.innerRock{
+  width:34px;
+  height:39px;
+  margin-top:-50%;
+  margin-left:29.66%;
+  background:rgb(148, 95, 95);
+  clip-path: polygon(27% 23%, 75% 23%, 95% 53%, 76% 85%, 26% 85%, 6% 54%);
+
+
+}
+
+.leaf{
+  margin-top:22%;
+}
+.innerLeaf{
+  width:90%;
+  height:90%;
+  background-color:rgb(113, 192, 113);
+  padding-top:22%;
+  padding-left:33%;
+}
+.innerTriangleBig{
+  width: 0;
+	height: 0;
+	border-width: 0 10px 30px 10px;
+	border-color: transparent transparent #FFF transparent;
+	border-style: solid;
+  rotate: -45deg;
+}
+.innerTriangle{
+  width: 0;
+	height: 0;
+	border-width: 0 4px 12px 4px;
+	border-color: transparent transparent #FFF transparent;
+	border-style: solid;
+  rotate: -45deg;
+}
+.leaf-mid{
+  width:40px;
+  height:40px;
+  background-color:#FFF;
+  /* border: 1px solid red; */
+  rotate: 45deg;
+  margin-left: 29%;
+  margin-top:15%;
+  padding-top:3%;
+  padding-left:3%;
+  z-index:3;
+}
+
+.leaf-left{
+  width:25px;
+  height:25px;
+  background-color:#FFF;
+  rotate: 45deg;
+  margin-left: 20%;
+  margin-top:-7.5%;
+  padding-top:3%;
+  padding-left:3%;
+}
+.leaf-left .innerLeaf{
+  padding-top:45%;
+  padding-left:55%;
+}
+.leaf-right .innerLeaf{
+  padding-top:45%;
+  padding-left:55%;
+}
+.leaf-right{
+  width:25px;
+  height:25px;
+  background-color:#FFF;
+  rotate: 45deg;
+  margin-left: 53%;
+  margin-top:-25.6%;
+  padding-top:3%;
+  padding-left:3%;
+}
+
+.flipper {
+  perspective: 600px;
+  -webkit-perspective: 600px;
+	-moz-perspective: 600px;
+  
+  /* -webkit-transform-origin: 100% center;
+  -moz-transform-origin: 100% center;
+  -ms-transform-origin: 100% center; */
+  transform-origin: 100% center;
+}
+.front-card, .back-card {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+  
+	-webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+
+  -o-transition: transform .6s ease-in-out;
+  -moz-transition: transform .6s ease-in-out;
+  -webkit-transition: transform .6s ease-in-out;
+  transition: transform .6s ease-in-out;
+  position: absolute;
+}
+
+.back-card{
+  -webkit-transform: rotateX(-180deg);
+	-moz-transform: rotateX(-180deg);
+	transform: rotateX(-180deg);
+  }
+.flipper.flip .back-card {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+  }
+.flipper.flip .front-card{
+  -webkit-transform: rotateX(180deg);
+	-moz-transform: rotateX(180deg);
+	transform: rotateX(180deg);
+}
